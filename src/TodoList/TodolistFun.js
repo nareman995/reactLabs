@@ -8,11 +8,9 @@ function TodolistFun()
 
     const handle_submit=(e)=>
     {
-        setTodolist((prev) => [
-            ...prev,
+        setTodolist(prev=>[...prev,
             Todolist.push(input)]);
-        console.log(Todolist)
-    }
+            }
     return(
         <div>
      <input type="text" placeholder="What should be done?" value={input} onChange={(e)=>{setinput(e.target.value)}}></input>
